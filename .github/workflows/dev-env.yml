@@ -23,6 +23,6 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: ghcr.io
 
-      - run: docker build -t ghcr.io/5hoei/bookinfo-ratings:dev .
-      - run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-      - run: docker push ghcr.io/5hoei/bookinfo-ratings:dev
+      # - run: docker build -t ghcr.io/5hoei/bookinfo-ratings:dev .
+      # - run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+      # - run: docker push ghcr.io/5hoei/bookinfo-ratings:dev
